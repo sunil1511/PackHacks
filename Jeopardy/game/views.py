@@ -2,6 +2,7 @@ from django.shortcuts import render
 import json
 from django.http import JsonResponse
 from django.conf import settings
+from game.__init__ import topics
 import random
 
 file_path = settings.FILE_PATH
@@ -9,18 +10,6 @@ question_selection = settings.QUESTION_SELECTION
 values = settings.VALUES
 
 def quizboard(request):
-    try:
-        topics = read_json_file()
-    except (ValueError, FileNotFoundError):
-        print(
-            "Problem with question configuration. Service Unavailable!"
-        )
-        data = {
-            "status": 500,
-            "message": "Users module is currently unavailable. Please try again later!",
-        }
-        return JsonResponse(data=data, status=data["status"])
-
     if request.method == "GET":
         board = {}
         for topic in topics:
@@ -33,14 +22,4 @@ def quizboard(request):
             "quizboard" : board,
             "values" : values
         }
-        return JsonResponse(data=data, status=200)    
-    
-
-
-
-
-def read_json_file():
-    topics = None
-    with open(file_path, "r") as topics_file:
-        topics = json.load(topics_file)
-    return topics
+        return JsonResponse(data=data, status=200)
