@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -120,4 +120,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-FILE_PATH = [200, 400, 600, 800, 1000]
+FILE_PATH = os.path.join(os.getcwd(), 'questions.json')
+
+QUESTION_SELECTION = {"easy" : 2, "medium" : 2, "hard" : 1}
+
+VALUES = [200, 400, 800, 600, 1000]

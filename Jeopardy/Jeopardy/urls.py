@@ -18,5 +18,5 @@ from django.urls import path
 import game.views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'', game.views),
+    path('api/', game.views.quizboard),
 ]
