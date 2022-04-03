@@ -120,11 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TOPICS_FILE_PATH = os.path.join(os.getcwd(), 'topics.json')
-
-QUESTION_ANSWERS_FILE_PATH = os.path.join(os.getcwd(), 'question_answers.json')
-
-QUESTION_SELECTION = {"easy" : 2}
+QUESTION_SELECTION = {"Easy" : 2}
 
 VALUES = [200, 400, 800, 600, 1000]
 
