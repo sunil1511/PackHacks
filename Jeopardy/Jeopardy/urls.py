@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 import game.views
 urlpatterns = [
+    path("", include("django.contrib.auth.urls")),
     path('admin/', admin.site.urls),
-    path('api/', game.views.quizboard),
+    path('api/', game.views.dashboard, name = "dashboard" ),
+    path('quizboard/', game.views.quizboard, name = "quizboard" ),
+    path("register/", game.views.register, name="register"),
 ]

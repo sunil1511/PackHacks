@@ -1,0 +1,12 @@
+{
+    "Q1" : {"question": "quedstion 1", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q2" : {"question": "quedstion 2", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q3" : {"question": "quedstion 3", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q4" : {"question": "quedstion 4", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q5" : {"question": "quedstion 5", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q6" : {"question": "quedstion 6", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q7" : {"question": "quedstion 7", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q8" : {"question": "quedstion 7", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q9" : {"question": "quedstion 7", "answer": ["Donald Trump", "trump"], "questionword":"Who is"},
+    "Q10" : {"question": "quedstion 7", "answer": ["Donald Trump", "trump"], "questionword":"Who is"}
+}
