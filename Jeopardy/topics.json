@@ -1,0 +1,16 @@
+[{
+    "topic" : "A",
+    "questions" : {
+        "easy" : ["Q1", "Q2"], 
+        "medium" : ["Q3", "Q4"],
+        "hard" : ["Q5"]
+    }
+},
+{
+    "topic" : "B",
+    "questions" : {
+        "easy" : ["Q6", "Q7"], 
+        "medium" : ["Q8", "Q9"],
+        "hard" : ["Q10"]
+    }
+}]
